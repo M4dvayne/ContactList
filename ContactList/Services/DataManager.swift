@@ -6,14 +6,13 @@
 //
 
 
-
 class DataManager {
     
     static let userData = DataManager()
     
     let names = [
-    "Corey", "Mick", "James", "Joey", "Tom", "Elon", "Ryan", "Carl", "Tom", "Christopher", "Johnatan"
-]
+        "Corey", "Mick", "James", "Joey", "Tom", "Elon", "Ryan", "Carl", "Tom", "Christopher", "Johnatan"
+    ]
     let surnames = [
         "Taylor","Thompson", "Root", "Jordison", "Smith", "Musk", "Greenwood", "Washington", "Parker", "Nolan", "Davis"
     ]

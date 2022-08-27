@@ -10,14 +10,14 @@ import UIKit
 class ContactListViewController: UITableViewController {
     
     var persons: [Person] = []
-
-
+    
+    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       persons.count
+        persons.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactID", for: indexPath)
         var content = cell.defaultContentConfiguration()
@@ -33,9 +33,8 @@ class ContactListViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
-        let detailVC = segue.destination as? ContactDetailsViewController 
+            let detailVC = segue.destination as? ContactDetailsViewController
             detailVC?.person = persons[indexPath.row]
         }
-}
-
+    }
 }

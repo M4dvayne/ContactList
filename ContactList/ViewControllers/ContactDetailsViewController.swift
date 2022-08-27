@@ -25,9 +25,5 @@ class ContactDetailsViewController: UIViewController {
         fullNameLabel.text = person.fullName
         phoneNumberLabel.text = person.phoneNumber
         emailLabel.text = person.email
-        
-        //здесь намудрил с инициализацией(
-        
-        
     }
 }
